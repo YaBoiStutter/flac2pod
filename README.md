@@ -50,11 +50,15 @@ If installing on a non-Arch-based distribution, a generic package is available o
 
 ## Docker Usage
 
+flac2pod can be run in a Docker container, with the following commands:
+
 Build the image:
 ```bash
-docker build -t flac2pod .
+docker build -t flac2pod
 ```
 To run the image:
 ```bash
 docker run -v /path/to/music:/music flac2pod /music
 ```
+
+There is also a docker compose available in the docker-compose.yml file.
