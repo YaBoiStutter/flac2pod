@@ -47,3 +47,14 @@ source_dir -> artist dir -> album dir -> FLAC files
 flac2pod is available in the AUR as "flac2pod".
 
 If installing on a non-Arch-based distribution, a generic package is available on the releases page.
+
+## Docker Usage
+
+Build the image:
+```bash
+docker build -t flac2pod .
+```
+To run the image:
+```bash
+docker run -v /path/to/music:/music flac2pod /music
+```
