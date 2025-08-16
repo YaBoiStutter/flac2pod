@@ -2,8 +2,8 @@ services:
   flac2pod:
     build:
       context: .
-    image: flac2pod-test
+    image: flac2pod
     volumes:
-      - ~/flac-test:/input
+      - ~/flac2pod:/input
       - ~/podcast-ready:/output
     entrypoint: ["python3", "flac2pod.py", "-b", "-p", "--", "/input", "/output"]
